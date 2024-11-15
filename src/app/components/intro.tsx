@@ -13,7 +13,7 @@ function intro() {
       </div>
       
       <div className='grid grid-cols-2 gap-4 rounded-md md:mx-6 p-2 px-8 shadow-[0_35px_60px_-15px_rgba(0,6,5,0.3)] w-full my-15 mx-8 h-full mt-10 pt-10 '>
-        <p className='text-xl  text-gray-600'>I’m Ngqiqo, a frond-end developer on a journey to create and grow. If building the future excites you, then yes—maybe you should.</p>
+        <p className='text-xl  text-gray-600'>I’m Ngqiqo, a front-end developer on a journey to create and grow. If building the future excites you, then yes—maybe you should.</p>
         <img 
         src="/boy.png" 
         alt=""
