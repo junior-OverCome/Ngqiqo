@@ -1,8 +1,8 @@
 'use client'
-import "../styles/globals.css";
+
 import Intro from "./components/intro";
-import Greetings from "./components/greetings"
-import Scroll from "./components/scroll"
+import Greetings from "./components/greetings";
+import Scroll from "./components/scroll";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Connect from "./components/connect";
