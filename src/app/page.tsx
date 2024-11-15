@@ -1,5 +1,5 @@
 'use client'
-
+import './globals.css';
 import Intro from "./components/intro";
 import Greetings from "./components/greetings";
 import Scroll from "./components/scroll";
