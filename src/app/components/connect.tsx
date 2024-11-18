@@ -5,7 +5,7 @@ import EmailJS from "@emailjs/browser";
 
 const Connect = () =>{
   const [formData, setFormData] = useState({
-    user_name: "",
+    from_name: "",
     user_email: "",
     message: "",
   });
@@ -60,9 +60,9 @@ const Connect = () =>{
             <label htmlFor="user_name" className="block text-sm font-medium text-gray-700">Name</label>
             <input 
             type="text"
-            id="user_name"
+            id="from_name"
             name="user_name"
-            value={formData.user_name}
+            value={formData.from_name}
             onChange={handleChange}
             required
             placeholder="Enter your full-name"
