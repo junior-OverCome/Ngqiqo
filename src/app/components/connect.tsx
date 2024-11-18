@@ -5,7 +5,7 @@ import EmailJS from "@emailjs/browser";
 
 const Connect = () =>{
   const [formData, setFormData] = useState({
-    user_name: "",
+    from_name: "",
     user_email: "",
     message: "",
   });
@@ -29,8 +29,10 @@ const Connect = () =>{
           e.target as HTMLFormElement,
           'k_kO26QQCd1vAZFof'
         );
-        if (res.status === 200)
-        setStatus("message sent successfully");
+        if (res.status === 200){
+          setStatus("message sent successfully");
+          setFormData({ from_name: '', user_email: '', message: '' });
+        }
         else 
           setStatus ('Message not sent, please try again');
         }catch (error) {
@@ -60,9 +62,9 @@ const Connect = () =>{
             <label htmlFor="user_name" className="block text-sm font-medium text-gray-700">Name</label>
             <input 
             type="text"
-            id="user_name"
-            name="user_name"
-            value={formData.user_name}
+            id="from_name"
+            name="from_name"
+            value={formData.from_name}
             onChange={handleChange}
             required
             placeholder="Enter your full-name"
