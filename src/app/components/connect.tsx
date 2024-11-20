@@ -109,10 +109,10 @@ const Connect = () =>{
     <div className="flex flex-col items-center mb-8">
       
       <div className="flex flex-row gap-2 mt-4">
-        <a href="" ><FaGithub
+        <a href="https://github.com/junior-OverCome" ><FaGithub
         className="h-10 w-10 hover:text-orange-500"/>
         </a>
-        <a href=""><FaLinkedin 
+        <a href="linkedin.com/in/mphumzi-mathanjana-92ba78246"><FaLinkedin 
         className="h-10 w-10 hover:text-orange-500"/>
         </a>
       </div>
