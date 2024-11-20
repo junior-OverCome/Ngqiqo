@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import EmailJS from "@emailjs/browser";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 const Connect = () =>{
@@ -105,11 +106,15 @@ const Connect = () =>{
       </div>
     )}
     </div>
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mb-8">
       
       <div className="flex flex-row gap-2 mt-4">
-        <a href="">LinkedIn</a>
-        <a href="">Github</a>
+        <a href="" ><FaGithub
+        className="h-10 w-10 hover:text-orange-500"/>
+        </a>
+        <a href=""><FaLinkedin 
+        className="h-10 w-10 hover:text-orange-500"/>
+        </a>
       </div>
       
     </div>

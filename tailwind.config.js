@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        width: "width", // Enables smooth width transitions
+        scale: "scale", // Enables smooth scale transitions
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
