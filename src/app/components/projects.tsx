@@ -81,7 +81,7 @@ export default function Projects() {
 
 
         {/* Right Side - Buttons */}
-        <ul className='w-full flex flex-col gap-0'>
+        <ul className='w-full flex flex-col gap-0 justify-center items-center'>
           {/* <li onClick={() => setActiveCard('ngqiqo')} className='group justfity-center flex flex-col active:bg-black items-center p-4 hover:bg-black hover:text-white'>
             <h2 className='uppercase font-bold text-2xl font-Sora'>ngqiqo portfolio</h2>
             <div className='text-gray-400 text-md justify-center md:text-lg'>Personal portfolio that showcases skills</div>
@@ -106,7 +106,7 @@ export default function Projects() {
   </div>
 
   {/* Right Section (View Link) */}
-  <div className="w-full md:w-1/4 flex justify-end">
+  <div className="w-full md:w-1/4 flex justify-center items-center">
     <a
       href="https://ngqiqo.vercel.app"
       className="uppercase text-sm w-full md:w-auto md:text-base hidden group-hover:inline-block md:block line-through group-hover:text-orange-500 transition-all duration-300"
