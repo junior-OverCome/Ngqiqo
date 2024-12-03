@@ -9,7 +9,7 @@ function intro() {
       <div className='items-center justify-center flex flex-col'>
         <p className='text-xs font-semibold'>INTRO</p>
         <h1 className='font-bold'>WHO AM I</h1>
-        <p className='text-gray-500 uppercase text-sm sm:text-base mt-2'>On a journey of discovery myself</p>
+        <p className='text-gray-500 uppercase text-sm sm:text-base mt-2'>should you even care?</p>
       </div>
       
       <div className='grid grid-cols-1 md:grid-cols-2 rounded-md md:mx-6 p-2 shadow-[0_35px_60px_-15px_rgba(0,6,5,0.3)] w-full my-15 h-full mt-10 py-10 px-10 '>

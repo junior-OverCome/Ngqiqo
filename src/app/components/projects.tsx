@@ -4,12 +4,10 @@ import React, { useState } from 'react';
 
 function NgqiqoCard() {
   return (
-    <div className='p-4 bg-white flex flex-col gap-5'>
-      <p className='text-gray-500 font-Sora text-2xl'>Creating responsive and efficient applications with:</p>
-      <div className='grid grid-cols-4 gap-1'>
-        <div className='bg-black text-white items-center justify-center flex border-r-2 rounded-bl-md transition transform hover:scale-125 hover:font-semibold hover:mr-3'> React</div>
-        <div className='bg-black text-white items-center justify-center flex border-r-2 transition transform hover:scale-125 hover:font-semibold hover:mx-3'> Node.js</div>
-        <div className='bg-black text-white items-center justify-center flex border-r-2 transition transform hover:scale-125 hover:font-semibold hover:mx-3'> HTML</div>
+    <div className='p-4 bg-white transition-transform  flex flex-col gap-5'>
+      <p className='text-gray-500 font-Sora text-2xl'>Personal portfolio</p>
+      <div className='grid grid-cols-4 gap-3'>
+        <div className='bg-black text-white items-center justify-center flex border-r-2 rounded-bl-md transition transform hover:scale-125 hover:font-semibold hover:mr-3 w-20' > NEXT JS</div>
         <div className='bg-black text-white items-center justify-center flex border-r-2 rounded-tr-md transition transform hover:scale-125 hover:font-semibold hover:ml-3 h-10'> CSS</div>
 
       </div>
@@ -70,7 +68,7 @@ export default function Projects() {
       <div className='flex flex-col items-center justify-center mt-16'>
         <p className='text-xs font-semibold'>PROJECTS</p>
         <h1 className='font-bold'>EXPANDING TECH</h1>
-        <p className='text-gray-500 text-sm sm:text-base mt-2'>Projects that push my boundaries</p>
+        <p className='text-gray-500 uppercase text-sm sm:text-base mt-2'>Projects that push my boundaries</p>
       </div>
       
       <main className='mt-8 mb-16 pt-8 px-8 pb-6 grid md:grid-cols-2 items-center gap-2 h-full w-full rounded-md shadow-[0_35px_60px_-15px_rgba(0,6,5,0.3)]'>
@@ -95,7 +93,7 @@ export default function Projects() {
           </li> */}
          <li
   onClick={() => setActiveCard('ngqiqo')}
-  className="group grid grid-cols-1 md:grid-cols-[75%,25%] gap-4 items-center p-4 hover:bg-black hover:text-white active:bg-black"
+  className="group grid grid-cols-1 w-full md:grid-cols-[80%,20%] gap-4 items-center p-4 hover:bg-black hover:text-white active:bg-black"
 >
   {/* Left Section */}
   <div className="flex flex-col">
@@ -106,10 +104,10 @@ export default function Projects() {
   </div>
 
   {/* Right Section (View Link) */}
-  <div className="w-full md:w-1/4 flex justify-center items-center">
+  <div className="w-full flex justify-center items-center">
     <a
       href="https://ngqiqo.vercel.app"
-      className="uppercase text-sm w-full md:w-auto md:text-base hidden group-hover:inline-block md:block line-through group-hover:text-orange-500 transition-all duration-300"
+      className="uppercase text-sm w-full md:w-auto md:text-base hidden group-hover:inline-block md:block md:hover:line-through group-hover:text-orange-500 transition-all duration-300"
     >
       View
       <span

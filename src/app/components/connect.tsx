@@ -47,11 +47,11 @@ const Connect = () =>{
       <div className='flex flex-col items-center justify-center mt-16 mb-8'>
         <p className='text-xs font-semibold'>CONNECT</p>
         <h1 className='font-bold'>LET'S CHAT</h1>
-        <p className='text-gray-500 text-sm sm:text-base mt-2'>Impressed yet? If yes, then let's connect!</p>
+        <p className='text-gray-500 uppercase text-sm sm:text-base mt-2'>Impressed yet? If yes, then let's connect!</p>
       </div>
     <div className="rounded-lg p-4 border bg-white max-w-full mx-auto">
     {/* Button to toggle form visibility */}
-    <button onClick={()=> setShowForm(!showForm)} className="w-full py-2 px-4 bg-indigo-600 text-white hover:scale-105 transition-transform rounded-md">
+    <button onClick={()=> setShowForm(!showForm)} className="w-full py-2 px-4 bg-orange-300 text-white hover:scale-105 transition-transform rounded-md">
     {showForm ? "Close" : "Connect"}
     </button>
     {showForm &&(
@@ -98,7 +98,7 @@ const Connect = () =>{
             />
           </div>
           <div className="justify-center flex">
-            <button type="submit" className="w-full py-2 px-4 text-white bg-indigo-600 focus:outline-none focus:ring-2">
+            <button type="submit" className="w-full py-2 px-4 text-white bg-orange-300 focus:outline-none focus:ring-2">
               Send
             </button>
           </div>
@@ -110,10 +110,10 @@ const Connect = () =>{
       
       <div className="flex flex-row gap-2 mt-4">
         <a href="https://github.com/junior-OverCome" ><FaGithub
-        className="h-10 w-10 hover:text-orange-500"/>
+        className="h-10 w-10 hover:text-orange-300"/>
         </a>
         <a href="linkedin.com/in/mphumzi-mathanjana-92ba78246"><FaLinkedin 
-        className="h-10 w-10 hover:text-orange-500"/>
+        className="h-10 w-10 hover:text-orange-300"/>
         </a>
       </div>
       
