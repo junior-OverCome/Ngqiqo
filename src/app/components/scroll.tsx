@@ -1,42 +1,23 @@
-'use client'
-import React from 'react'
-import { useState, useEffect } from 'react'
+"use client";
 
-// const scroll = () => {
-//   return (
-//     <div>scroll</div>
-//   )
-// }
+import React, { useEffect, useState } from "react";
 
-// export default scroll
-export default function scroll(){
-  const [scrollText, setScrollText] = useState("Explore");
+export default function Scroll() {
+  const [scrollText, setScrollText] = useState("Scroll to explore");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrollText("You're doing it");
-      } else {
-        setScrollText("Explore");
-      }
+      setScrollText(window.scrollY > 80 ? "Keep going" : "Scroll to explore");
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="flex flex-col items-center h-40 pt-8 mt-28 mb-16">
-      <div className="flex flex-col items-center">
-        <h2 className="text-xs uppercase font-semibold animate-bounce mb-4 text-gray-400">
-          {scrollText}
-        </h2>
-        <span
-          className="w-1 h-16 bg-orange-300 animate-bounce rounded-lg"
-          aria-hidden="true"
-        ></span>
-      </div>
+    <div className="flex flex-col items-center gap-3 py-2">
+      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">{scrollText}</span>
+      <span className="h-12 w-[2px] animate-pulse rounded-full bg-orange-400" aria-hidden="true" />
     </div>
-  )
-} 
+  );
+}

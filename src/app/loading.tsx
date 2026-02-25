@@ -1,15 +1,13 @@
-// app/loading.tsx
-
-"use client"; // Ensure it's a client component if you need interactivity
+"use client";
 
 import React from "react";
 
 export default function Loading() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-800">
-      <div className="w-16 h-16 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
-      <span className="mt-4 text-lg font-semibold animate-bounce text-gray-700 dark:text-gray-200">
-        Loading...
+    <div className="flex h-screen flex-col items-center justify-center bg-[#f7f5ef]">
+      <div className="h-16 w-16 rounded-full border-4 border-orange-300 border-t-transparent animate-spin" />
+      <span className="mt-4 text-base font-semibold uppercase tracking-[0.2em] text-stone-600">
+        Loading
       </span>
     </div>
   );

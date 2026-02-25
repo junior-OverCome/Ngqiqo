@@ -1,15 +1,32 @@
-import React from 'react'
+import React from "react";
 
-const greetings = () => {
+const Greetings = () => {
   return (
-    <section className='flex flex-col items-center justify-center h-full pb-20 pt-20'>
-        <div  className='flex flex-col pt-44 items-center h-full'>
-            <h1 className='text-4xl font-bold pt-10'>Hi, I'm Ngqiqo.</h1>
-            <p className='text-md pt-2 text-gray-500 '>Exploring Tech, One Project at a Time</p>
-        </div>
-    
-    </section>
-  )
-}
+    <section className="section-shell flex flex-col gap-8 md:gap-10">
+      <div className="inline-flex w-fit rounded-full border border-orange-200 bg-orange-100 px-4 py-1 text-xs font-bold uppercase tracking-[0.25em] text-orange-900">
+        Frontend Portfolio
+      </div>
 
-export default greetings
+      <div className="space-y-4">
+        <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+          Hi, I&apos;m Ngqiqo.
+          <span className="block text-orange-700">I build clean, human-first web experiences.</span>
+        </h1>
+        <p className="max-w-2xl text-base text-stone-600 sm:text-lg">
+          Frontend developer focused on useful interfaces, strong fundamentals, and continuously shipping better work.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        <a href="#projects" className="primary-btn">
+          View Projects
+        </a>
+        <a href="#connect" className="secondary-btn">
+          Let&apos;s Connect
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Greetings;

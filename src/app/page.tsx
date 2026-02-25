@@ -13,20 +13,19 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); // Simulate 2s load
+    const timer = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) return <Loading />;
   return (
-    <main className="flex flex-col sm:mx-10 md:mx-12 h-full items-center justify-center pt-20 sm:pt-20 md:pt-28 px-4">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center gap-10 px-4 pb-16 pt-10 sm:px-6 md:pt-14">
       <Greetings />
       <Scroll />
       <Intro />
       <Projects />
       <Skills />
       <Connect />
-      
     </main>
   );
 }
