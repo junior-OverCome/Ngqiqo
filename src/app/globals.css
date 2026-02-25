@@ -22,11 +22,9 @@ body {
   background-color: var(--bg);
   background-image:
     radial-gradient(circle at 12% 10%, rgba(255, 206, 157, 0.5), transparent 35%),
-    radial-gradient(circle at 86% 14%, rgba(250, 155, 105, 0.28), transparent 30%),
-    linear-gradient(rgba(23, 23, 23, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(23, 23, 23, 0.04) 1px, transparent 1px);
-  background-size: auto, auto, 28px 28px, 28px 28px;
-  background-position: 0 0, 0 0, -1px -1px, -1px -1px;
+    radial-gradient(circle at 86% 14%, rgba(250, 155, 105, 0.28), transparent 30%);
+  background-size: auto, auto;
+  background-position: 0 0, 0 0;
 }
 
 @layer components {
