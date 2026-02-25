@@ -9,6 +9,12 @@ const projects = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     href: "https://ngqiqo.vercel.app",
   },
+   {
+    title: "Ngqiqo Portfolio",
+    description: "Personal portfolio that presents my work, growth path, and frontend craft.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    href: "https://ngqiqo.vercel.app",
+  },
   {
     title: "Network Operations Showcase",
     description: "Practical workflow examples for secure setups, diagnosis, and reliable routing.",
